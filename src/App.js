@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
 
-function App() {
+const App = () => {
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/test").then((res) => console.log(res));
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <video controls>
+        <source
+          src="http://localhost:3001/test.mkv"
+          type="video/mkv"
+        />
+        {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
+      </video>
     </div>
   );
-}
+};
 
 export default App;
