@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import Playback from "./playback/Playback";
 
 const App = () => {
   // useEffect(() => {
@@ -6,13 +7,7 @@ const App = () => {
   // }, []);
   return (
     <div>
-      <video controls>
-        <source
-          src="http://localhost:3001/test.mkv"
-          type="video/mkv"
-        />
-        {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
-      </video>
+      <Playback></Playback>
     </div>
   );
 };
