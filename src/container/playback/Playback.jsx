@@ -4,7 +4,7 @@ import { Button, Form, Input } from "antd";
 import "./Playback.scss";
 import { useState } from "react";
 
-const Playback = (props) => {
+const PlaybackComponent = (props) => {
   const magnet = window.localStorage.getItem("magnet");
   const link = "http://localhost:3001/watch/stream?mglink=";
 
@@ -19,4 +19,4 @@ const Playback = (props) => {
   );
 };
 
-export default Playback;
+export default PlaybackComponent;
