@@ -1,13 +1,11 @@
 import React from "react";
-import Playback from "./playback/Playback";
+import Routes from "./routes";
+import "./App.scss";
 
 const App = () => {
-  // useEffect(() => {
-  //   fetch("http://localhost:3001/test").then((res) => console.log(res));
-  // }, []);
   return (
-    <div>
-      <Playback></Playback>
+    <div className="app-container">
+      <Routes />
     </div>
   );
 };
